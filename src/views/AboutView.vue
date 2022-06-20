@@ -29,7 +29,7 @@ export default {
     console.log('created ... About');
   },
   // beforeUnmount() {
-  //   if we add this life cycle then memory will release
+  //   //if we add this life cycle then memory will release
   //   this.str = undefined;
   //   this.testArr = undefined;
   // },
