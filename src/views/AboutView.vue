@@ -28,12 +28,13 @@ export default {
     }
     console.log('created ... About');
   },
-  beforeUnmount() {
-    this.str = undefined;
-    this.testArr = undefined;
-  },
+  // beforeUnmount() {
+  //   if we add this life cycle then memory will release
+  //   this.str = undefined;
+  //   this.testArr = undefined;
+  // },
   async unmounted() {
-    console.log('unmounted About', this.str); //still has data but it should return undefined
+    console.log('unmounted About', this.str); //still has value but it should return undefined
   },
 };
 </script>
